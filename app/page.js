@@ -13,15 +13,21 @@ export default function HomePage() {
       </div>
 
       {/* Foreground content */}
-      <div className="relative z-10 w-full text-center">
+      <div className="relative z-10 w-full max-w-screen-md mx-auto p-4 text-center">
         <h1
-          className="font-bold text-blue-400 mb-6"
-          style={{ fontSize: "9rem", lineHeight: "1.1", display: "block" }}
+          className="
+            mb-6
+            font-bold
+            text-blue-400
+            text-6xl         /* base (mobile) */
+            md:text-8xl      /* medium screens (≥768px) */
+            lg:text-9xl      /* large screens (≥1024px) */
+            leading-tight
+          "
         >
           <TypingAnimation>Clera.tech</TypingAnimation>
         </h1>
-
-        {/* Center the ShimmerButton */}
+        
         <ShimmerButton className="mx-auto shadow-2xl">
           <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
             Coming Soon
