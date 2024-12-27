@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import RetroGrid from "@/components/ui/retro-grid";
 import TypingAnimation from "@/components/ui/typing-animation";
 import ShimmerButton from "@/components/ui/shimmer-button";
@@ -27,12 +28,15 @@ export default function HomePage() {
         >
           <TypingAnimation>Clera.tech</TypingAnimation>
         </h1>
-        
-        <ShimmerButton className="mx-auto shadow-2xl">
-          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-            Coming Soon
-          </span>
-        </ShimmerButton>
+
+        {/* Link to Feed Page */}
+        <Link href="/feed">
+          <ShimmerButton className="mx-auto shadow-2xl">
+            <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+              Enter Feed
+            </span>
+          </ShimmerButton>
+        </Link>
       </div>
     </main>
   );
