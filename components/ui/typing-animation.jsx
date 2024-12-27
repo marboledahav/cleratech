@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 export default function TypingAnimation({
   children,
   className,
-  duration = 100,
+  duration = 125,
   delay = 0,
   as: Component = "div",
   startOnView = false,
